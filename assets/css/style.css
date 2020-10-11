@@ -1,0 +1,231 @@
+body {
+     text-align: center;
+     /* Color de Letra para todos los textos: Riche Black */
+     color: #000f08;
+     font-family: 'Open Sans', sans-serif;
+     margin: 0;
+}
+
+/* con esto reseteamos todas las etiquetas dentro del <body> */
+body * {
+     margin: 0;
+     border: 0;
+     padding: 0;
+}
+
+h1 {
+     font-weight: 800;
+     font-size: 60px;
+     
+}
+
+h2 {
+     font-weight: 700;
+     font-size: 45px;
+}
+
+h3 {
+     font-weight: 700;
+     font-size: 40px;
+}
+
+h4 {
+     font-weight: 400;
+     font-size: 33px;
+}
+
+h5 {
+     font-weight: 400;
+     font-size: 20px;
+}
+
+/* subtitulo de hero-section*/
+h2 span {
+     font-weight: 400;
+}
+
+nav {
+     text-align: left;
+     padding: 20px 60px;
+     width: 100%;
+     /*El elemento está posicionado en la esquina superior izquierda en relación con la ventana del navegador y no se nueve aunque hagamos scroll*/
+     position: fixed;
+}
+
+nav ul {
+     /* Especifica el tipo de marcador de ítems en una lista si es none no se muestra marcador*/
+     list-style-type: none;
+}
+
+nav ul li {
+     display: inline-block;
+     margin: 0 16px;
+
+     /* El elemento se coloca en el medio del elemento principal.*/
+     vertical-align: middle;
+}
+
+#icono {
+     width: 40px;
+}
+
+
+/* Tanto el <nav> como el <footer> comparten fondo de color Rich Black y la letra de color blanco*/
+.oscuro {
+     padding: 0;
+     background: #000f08;
+     color: #ffffff;
+}
+
+/* selecciona todas las etiquetas <a>
+que estén dentro de las etiquetas con clase oscuro.
+*/
+.oscuro a {
+     color: #ffffff;
+     /* Los links (etiqueta <a>) se siguen viendo azules y con el subrayado, lo quitamos con none
+*/
+     text-decoration: none;
+}
+
+.hero-imagen {
+     /*imagen como fondo*/
+     background-image: url('../img/bg-hero.png');
+
+     height: 200px;
+
+     /*
+     La imagen de fondo no se repite. La imagen solo se mostrará una vez
+     */
+     background-repeat: no-repeat;
+
+     /* Cambia el tamaño de la imagen de fondo para cubrir el elemento que la contiene*/
+     background-size: cover;
+     padding: 50px 50px;
+
+}
+
+.hero-texto {
+     text-align: right;
+     color: #ffffff;
+     text-shadow: 2px 3px 2px #707070;
+
+}
+
+/* existe una separación entre el <header>, <hero section y la
+sección <ubicación>*/
+
+section,
+footer {
+     margin-top: 75px;
+}
+
+#ubicacion h2 {
+     margin: 1em auto;
+}
+
+.sweet-brown h3,
+.sweet-brown h5 {
+     margin-bottom: 0.5em;
+}
+
+#eventos h2 {
+     margin-bottom: 1em;
+}
+
+#eventos h3 {
+     margin: 1em auto;
+}
+
+/* seccion proxima-charla */
+.sweet-brown {
+     text-align: left;
+     background: #a4452c;
+     color: #ffffff;
+     padding: 50px;
+
+     /* Las secuencias de espacios en blanco se colapsaran en un solo espacio en blanco. El texto nunca pasará a la siguiente línea. */
+     white-space: nowrap;
+}
+
+.centrado {
+
+     /* este ancho corressponde al 75% el contenedor <section id="proxima-charla"
+class="sweet-brown"> que a su vez tiene el tamaño del 100% del vp*/
+     width: 75%;
+
+     /* centrar horizontalmente, valor para arriba y abajo y auto para el lado derecho e izquierdo*/
+     margin: 0 auto;
+}
+
+.charla-imagen {
+     display: inline-block;
+     width: 25%;
+
+     /* El elemento se coloca en el medio del elemento principal.*/
+     vertical-align: middle;
+}
+
+.charla-texto {
+     display: inline-block;
+     width: 72.5%;
+
+     /* El elemento se coloca en el medio del elemento principal.*/
+     vertical-align: middle;
+
+     margin-left: 2.5%;
+
+     /*Las secuencias de espacios en blanco se colapsarán en un solo espacio en blanco. El texto se ajustará cuando sea necesario. Esto es predeterminado*/
+     white-space: normal;
+    text-align: justify;
+}
+
+.evento {
+     display: inline-block;
+     width: 30%;
+}
+
+.evento img {
+     width: 75%;
+}
+
+footer {
+     padding: 50px;
+}
+
+footer i {
+     margin: 10px 30px;
+}
+
+/* Estilos segunda pagina*/
+
+.titulo-simposio {
+     text-align: left;
+     font-weight: 800;
+     font-size: 35px;
+     margin-left: 455px;
+     margin-bottom: 50px; 
+     padding-top: 90px;
+}
+
+.img-simposio{
+     width:750px;
+     height: 400px;
+     background-repeat: no-repeat;
+     border-radius: 5px;
+}
+.subtitulo-greg {
+     text-align: left;
+     font-weight: 800;
+     font-size: 30px;
+     margin-left: 455px;
+     padding: 5px;
+}
+
+.parrafo-uno,
+.parrafo-dos,
+.parrafo-tres,
+.parrafo-cuatro {
+     margin: 10px 455px;
+     padding: 5px;
+     text-align: justify;
+}
